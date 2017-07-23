@@ -1,0 +1,187 @@
+<!doctype html>
+
+<!--  -->
+
+<html>
+
+	<head>
+		<title>
+			You're Home Now!
+		</title>
+
+		<!-- Styling 1 contains styling of the navigation bar at top -->
+		<link rel="stylesheet" type="text/css" href="Styling1.css">
+
+	</head>
+
+	<body>
+
+		<!-- The following section defines the Navigation Bar as a div -->
+		<div id="NavBar">
+			
+			<table width="100%" id="NavBar_Table">
+
+    			<!-- Text on the Navigation Bar -->
+				<tr>
+					<td id="NavBar_1"> <a href="Home.html" id="Home_Link"> Home </a> </td>
+					<td id="NavBar_2"> <a href="Personal.html" id="Personal_Link"> Personal </a></td>
+					<td id="NavBar_3"> <span id="Notif_Link"> Notifications </span> </td>
+					<td id="NavBar_4"> </td>
+					<td id="NavBar_5"> <span id="Others_Link"> Options </span> <td>
+				</tr>
+				
+			</table>
+		
+		</div>
+
+		<!-- Setting up profile picture on home -->
+
+		<div id="Profile_Link">
+			<a href="Profile.html"> <img src="Profile_Default.png" id="Profile_Image" "> </a>
+		</div>
+
+		<!-- User information displayed on home screen -->
+		<div id=User_Info>
+			<p>User Info goes here</p>
+		</div>
+
+		<!-- Search Bar on Home -->
+		<div id=Search_Bar>
+			<form>
+				<input type="text" name="SB_input" value="What do you wanna VACH?" id="SB">
+			</form>
+		</div>
+
+		<!-- New Article / Search button -->
+		<div id="New_Button_div">
+			<form>	
+				<input type="submit" name="New_Button" value="New Article" id="New_Article_Button">
+			</form>
+		</div>
+
+
+		<div id="Feed">
+			
+			<table id="All_Feed" cellspacing="0px">
+				
+				<tr id="Visible_Tags">
+					
+						<td id="Feed_Left_Tags">
+							<table id="FL_Tags_Table">
+								<tr>
+									<td id="VTL_1"> Mechanical Engineering </td>
+									<td id="VTL_2"> Electrical Engineering </td>
+									<td id="VTL_3"> Physics </td>
+									<td id="VTL_4"> 
+										<div id="QC_L">
+											<button id="QCL_Button" onclick="Quick_Change()">
+												<img src="Quick Change.png" height="20px"> 
+											</button>
+
+											<form id="QCL_Form">
+												<input type="checkbox" name="LT" value="Mechanical Engineering"> Mechanical Engineering <br>
+												<input type="checkbox" name="LT" value="Electrical Engineering"> Electrical Engineering <br>
+												<input type="checkbox" name="LT" value="Computer Science">	Computer Science <br>
+												<input type="checkbox" name="LT" value="Physics"> Physics <br>
+												<input type="checkbox" name="LT" value="Politics"> Politics <br>
+											</form>
+
+										</div>
+									</td>
+								</tr>
+							</table>
+						</td>
+
+						<td id="Feed_Mid_Tags">
+							<table id="FM_Tags_Table">
+								<tr>
+									<td id="VTM_1"> Mechanical Engineering </td>
+									<td id="VTM_2"> Electrical Engineering </td>
+									<td id="VTM_3"> Physics </td>
+									<td id="VTM_4"> <img src="Quick Change.png" height="20px"> </td>
+								</tr>
+							</table>
+
+						</td>
+
+						<td id="Feed_Right_Tags">
+							<table id="FR_Tags_Table">
+
+								<colgroup>
+       								<col span="1" style="width: 32%;">
+       								<col span="1" style="width: 32%;">
+       								<col span="1" style="width: 32%;">
+       								<col span="1" style="width: 4%;">
+				    			</colgroup>
+
+								<tr>
+									<td id="VTR_1"> Mechanical Engineering </td>
+									<td id="VTR_2"> Electrical Engineering </td>
+									<td id="VTR_3"> Physics </td>
+									<td id="VTR_4"> <img src="Quick Change.png" height="20px"> </td>
+								</tr>
+							</table>
+
+						</td>
+
+				</tr>
+
+				<tr id="Feed_Data">
+					
+					<td id="Feed_Left">
+						
+						<div id="FL_Content"> <br><br>Feed 1 goes here
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br> Does the scroll work? Yes it does.
+						</div>
+
+					</td>
+
+					<td id="Feed_Mid">
+						
+						<div id="FM_Content"> <br><br>Feed 2 goes here
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br> Does the scroll work? Yes it does.
+						</div>
+
+					</td>
+
+					<td id="Feed_Right">
+						
+						<div id="FR_Content"> <br><br>Feed 3 goes here
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+						<br> Does the scroll work? Yes it does.
+						</div>
+
+
+					</td>
+
+				</tr>
+
+				
+			</table>
+
+		</div>
+
+
+
+
+
+	</body>
+
+</html>

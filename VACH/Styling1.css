@@ -1,0 +1,137 @@
+ /*Beige (Base color background */
+body { background-color: #f5f5dc; 
+		font-family: Arial;
+		font-size: 12pt;}
+
+/* Navigation bar styling begins here */
+
+#NavBar {background-color: #490F03;				/* Top Navigation bar background*/
+		color: white;							/* Navigation Bar text color*/
+		font-family: Times;						/* Navigation bar font*/
+		font-size: 16pt;							/* Navigation bar font size */
+		width: 100%;							/* Navigation bar stays across the page. DON'T touch this now. */
+		height: 50px;							/* Thickness of Navigation Bar */
+
+		position: fixed;						/* Kid. Don't touch the next three lines.*/
+		top: 0px;
+		left: 0px;
+		z-index: 999;
+		}
+
+#NavBar a:link {color: white;					/* Adjusting color of links on the navigation bar */
+			text-decoration: none;}				
+#NavBar	a:visited {color: white;
+			text-decoration: none;}
+#NavBar a:hover {color: white;
+			text-decoration: bold;}
+#NavBar a:active {color: white;
+			background-color: #6F372B;
+			text-decoration: none;}
+
+#NavBar_Table {padding-top: 10px;}				/* Distance of text from top. */
+
+#NavBar_Table td {text-align: center;}			/* Keeps text in centre on the Navbar*/
+
+/* Location of text on Navigation Bar (from left ish) */
+#NavBar_1 { width: 10%; }
+#NavBar_2 { width: 8%; }
+#NavBar_3 { width: 14%; }
+#NavBar_4 { width: 58%; }
+#NavBar_5 { width: 10%; }
+
+/* Profile picture on Home positioning begins here. */
+
+#Profile_Link { border: 1px black dotted;
+				background-color: #f5f5dc;
+				position: absolute;
+				top : 75px;
+				left: 50px; }
+
+#Profile_Image { max-width: 200px;
+				max-height: 200px; }
+
+
+/* User Information on Home screen styling*/
+#User_Info {position: absolute;
+			top: 75px;
+			right: 50px;
+
+			border: 1px black dotted; 
+			width: 200px;
+			height: 200px;
+			text-align: center; }
+
+/* Search Bar styling */
+#Search_Bar {	position: absolute;
+				top: 200px;
+				left: 300px;}
+
+#SB { height: 40px;
+		width: 500px; 
+		font-family: Times;
+		font-size: 14pt;}
+
+/* New Article Button styling */
+#New_Article_Button {width: 140px;
+				height: 45px;
+				background-color: #490F03;
+				color: white;
+				font-family: Times;
+				font-size: 12pt;}
+
+#New_Button_div { position: absolute;
+				top: 200px;
+				left: 825px; }
+
+/* Styling of Feed div */
+
+#Feed { width: 100%;
+		height: 92%;
+		padding: 0px;
+		text-align: center;
+		border-top: 3px #490F03 solid;
+		border-bottom: 1px black dotted;
+
+		position: absolute;
+		left: 0px;
+		top: 300px; }
+
+
+#Feed_Left { border-right: 2pt #490F03 solid;}		/* Line between left and mid feed */
+#Feed_Mid { border-right: 2pt #490F03 solid;}     	/* Line between mid and right feed */
+
+/* Left Feed Tag styling*/
+#Feed_Left_Tags { border-right: 2pt #490F03 solid;}
+
+#VTL_1 { width: 32%;}
+#VTL_2 { width: 32%;}
+#VTL_3 { width: 32%;}
+
+#QCL_Form { display: none; }
+#QCL_Button {background-image: none;}
+
+/* Middle Feed Tag Styling*/
+#Feed_Mid_Tags { border-right: 2pt #490F03 solid;}
+
+#VTM_1 { width: 32%;}
+#VTM_2 { width: 32%;}
+#VTM_3 { width: 32%;}
+
+/* Right Feed Tag styling*/
+#Feed_Right_Tags { }
+
+#VTR_1 { width: 32%; }
+#VTR_2 { width: 32%;}
+#VTR_3 { width: 32%;}
+
+/* Left Content Styling */
+#FL_Content { height: 580px;
+			overflow: auto;}
+
+/* Middle Content Styling */
+#FM_Content { height: 580px;
+			overflow: auto;}
+
+/* Right Content Styling */
+#FR_Content { height: 580px;
+			overflow: auto;}
